@@ -96,7 +96,7 @@ Run this command to make sure that the API correctly responding (take a screensh
 
 `curl -u toto:python -X GET http://<host IP>:<API exposed port>/pozos/api/v1.0/get_student_ages`
 
-## Infrastructure As Code (5 points)
+## Infrastructure As Code
 
 After testing your API image, you need to put all together and deploy it, using docker-compose.
 
