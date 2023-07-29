@@ -1,25 +1,4 @@
-# student-list 
-This repo is a simple application to list student with a webserver (PHP) and API (Flask)
-
-![project](https://user-images.githubusercontent.com/18481009/84582395-ba230b00-adeb-11ea-9453-22ed1be7e268.jpg)
-
-
-------------
-
-
-## Objectives
-
-The objectives of this practice exam are to ensure that you are able to manage a docker infrastructure, so you will be evaluated about the following
-
-### Themes:
-
-- improve an existed application deployment process
-- versioning your infrastructure release
-- address best practice when implementing docker infrastructure
-- Infrastructure As Code
-
 ## Context
-
 
 *POZOS*  is an IT company located in France and develops software for High School.
 
@@ -61,8 +40,6 @@ student_list has two modules:
 
 Your work is to build one container for each module an make them interact with each other
 
-Application source code can be found [here](https://github.com/diranetafen/student-list.git "here")
-
 The files that you must provide (in your delivery) are ***Dockerfile*** and ***docker-compose.yml***  (currently both are empty)
 
 Now it is time to explain you each file's role:
@@ -74,7 +51,7 @@ Now it is time to explain you each file's role:
 - index.php: PHP  page where end-user will be connected to interact with the service to - list students with age. You need to update the following line before running the website container to make ***api_ip_or_name*** and ***port*** fit your deployment
    ` $url = 'http://<api_ip_or_name:port>/pozos/api/v1.0/get_student_ages';`
 
-
+-------
 
 ## Build and test (7 points)
 
@@ -161,21 +138,3 @@ So you need to deploy :
 Or you can use [Portus](http://port.us.org/ "Portus") to run both
 
 Don't forget to push your image on your private registry and show them in your delivery.
-
-## Delivery (4 points)
-
-Your delivery must be zip named firstname.zip (replace firstname by your own) that contain:
-
-- A doc or PDF file with your screenshots and explanations.
-- Configuration files used to realize the graded exercise (docker-compose.yml and Dockerfile).
-
-Your delivery will be evaluated on:
-
-- Explanations quality
-- Screenshots quality (relevance, visibility)
-- Presentation quality
-
-Send your delivery at ***eazytrainingfr@gmail.com*** and we will provide you the link of the solution.
-
-![good luck](https://user-images.githubusercontent.com/18481009/84582398-cad38100-adeb-11ea-95e3-2a9d4c0d5437.gif)
-
