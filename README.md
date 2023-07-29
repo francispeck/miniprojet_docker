@@ -53,7 +53,7 @@ Now it is time to explain you each file's role:
 
 -------
 
-## Build and test (7 points)
+## Build and test
 
 POZOS will give you information to build the API container
 
@@ -88,17 +88,13 @@ To interact with this API expose 5000 port
 
 - CMD
 
-When container start, it must run the student_age.py (copied at step 4), so it should be something like
-
-`CMD [ "python", "./student_age.py" ]`
+When container start, it must run the student_age.py (copied at step 4)
 
 Build your image and try to run it (don't forget to mount *student_age.json* file at */data/student_age.json* in the container), check logs and verify that the container is listening and is  ready to answer
 
 Run this command to make sure that the API correctly responding (take a screenshot for delivery purpose)
 
 `curl -u toto:python -X GET http://<host IP>:<API exposed port>/pozos/api/v1.0/get_student_ages`
-
-**Congratulation! Now you are ready for the next step (docker-compose.yml)**
 
 ## Infrastructure As Code (5 points)
 
@@ -126,7 +122,7 @@ Finally, reach your website and click on the bouton "List Student"
 
 **If the list of the student appears, you are successfully dockerizing the POZOS application! Congratulation (make a screenshot)**
 
-## Docker Registry (4 points)
+## Docker Registry
 
 POZOS need you to deploy a private registry and store the built images
 
